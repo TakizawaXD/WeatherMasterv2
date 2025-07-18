@@ -1,7 +1,3 @@
-Aquí tienes el `README.md` completo, sin explicaciones de código detalladas y con la imagen del diagrama de estructura que solicitaste.
-
------
-
 # WeatherMaster – Sistema de Clima en Tiempo Real
 
 ## 📌 Descripción General
@@ -46,79 +42,7 @@ El propósito de WeatherMaster es ofrecer un sistema de consulta meteorológica 
 
 ## 🗂️ Diagrama de la Estructura del Proyecto
 
------
-
-## 🚀 Inicio Rápido
-
-Sigue estos pasos para levantar el proyecto en tu entorno local.
-
-### 1\. Clonar el Repositorio
-
-```bash
-git clone https://github.com/tu_usuario/WeatherMaster.git
-cd WeatherMaster
-```
-
-### 2\. Configuración del Backend (Python/FastAPI)
-
-1.  **Instalar Dependencias de Python:**
-
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-2.  **Configurar Variables de Entorno:**
-    Copia el archivo de ejemplo y edítalo con tus claves.
-
-    ```bash
-    cp .env.example .env
-    ```
-
-    Abre `.env` y añade tu clave de API de OpenWeatherMap:
-
-    ```
-    WEATHER_API_KEY=tu_clave_api_openweathermap
-    DATABASE_URL=sqlite:///./weather.db
-    ```
-
-3.  **Obtener tu Clave de API de OpenWeatherMap:**
-
-      * Regístrate en [OpenWeatherMap](https://openweathermap.org/api).
-      * Copia tu clave de API y pégala en el archivo `.env`.
-
-4.  **Iniciar el Servidor Backend:**
-
-    ```bash
-    uvicorn main:app --reload --host 0.0.0.0 --port 8000
-    ```
-
-    El backend estará disponible en `http://localhost:8000`.
-
-### 3\. Configuración del Frontend (React/TypeScript)
-
-1.  **Instalar Dependencias de Node.js:**
-
-    ```bash
-    npm install
-    ```
-
-2.  **Iniciar el Servidor de Desarrollo Frontend:**
-
-    ```bash
-    npm run dev
-    ```
-
-    El frontend estará disponible en `http://localhost:5173` (o el puerto que Vite asigne).
-
-### 4\. Abrir en tu Navegador
-
-Una vez que ambos servidores (backend y frontend) estén ejecutándose:
-
-  * Navega a la URL de tu frontend (ej. `http://localhost:5173`) para interactuar con la aplicación.
-  * Puedes probar los endpoints de la API directamente en `http://localhost:8000/docs` (documentación interactiva de FastAPI).
-
------
-
+![Diagrama de la estructura del proyecto](/img/clime.png)
 ## 📊 Endpoints de la API
 
 Los siguientes endpoints están disponibles a través de la API de FastAPI:
